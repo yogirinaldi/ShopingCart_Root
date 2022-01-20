@@ -424,7 +424,7 @@ function totalPrice() {
     cartItem.forEach((item) => {
       if (item.checked == "checked") {
         subTotal += item.totalPrice;
-        totalItem += 1;
+        totalItem += item.quantity;
         if (item.off != 0) {
           totalDisc += item.off * item.quantity;
         }
